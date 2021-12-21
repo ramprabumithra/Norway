@@ -1,0 +1,262 @@
+<html>
+<head>
+<style>
+.header
+{
+background-color:#AED6F1;
+ padding:20px; 
+ text-align:center; 
+ }
+ 
+.btn
+{
+font-size:20px;
+float:right;
+}
+
+.middle
+{
+padding:100px;
+background-image:url("norway.jpg");
+height:250px;
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+text-align:center;
+font-family:Geneva;
+color:white;
+}
+
+#Hotels{}
+
+
+#content{
+background-color:black;
+opacity:0.9;
+font-size:20px;
+border:10px solid pink;
+padding:20px;
+text-align:center;
+color:white;
+margin-top:20px;
+font-family:Geneva;
+}
+
+#visit{}
+
+ol{list-style-type:upper-roman;}
+.style-table{
+border-collapse;
+margin-left:auto;
+margin:right;
+font-style:bold;
+font-family:"Times New Roman";
+box-shadow:0 0 20px rgba(0,0,0,0.15);
+padding:15px;
+min-width:400px;
+}
+.style-table tr{background-color:#EAA3A3  ;}
+.style-table tr:nth-of-type(even){background-color:#B8EDDD ;}
+.style-table thead tr{background-color:#B5BCB9; }
+
+.container{
+  position: relative;
+  width: 50%; 
+  float:right;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.overlay {
+  position: absolute;
+  opacity:0.8;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.footer{
+background-color:#ECA3C0 ;
+padding:10px;
+text-align:center;
+font-size:15px;
+font-family: Geneva;
+}
+
+nav{float:right;}
+
+nav ul{list-style-type:none;}
+
+nav li{display:inline-block;margin-left:70px;padding-top:23px;position:relative;}
+
+nav a{text-decoration:none;color:blue;text-transform:uppercase;font-size:14px;}
+
+nav a:hover{color:purple;}
+
+nav a::before{content:"";display:table;height:5px;position:absolute;transition:all ease-in-out 250ms;width:0%;}
+
+nav a:hover::before{width:100%;}
+</style>
+</head>
+
+<body align="center">
+<div class="header"><img src="travel logo.png" height="80px" width="80px">
+<button class="btn">Login</button>
+<nav>
+<ul>
+<li><a href="travel.html">Home</a>
+</li>
+<li><a href="#Hotels">Hotels</a>
+</li>
+<li><a href="#content">Places to Visit</a>
+</li>
+<li><a href="#visit">Why Visit Norway?</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="middle"><h1 style="text-shadow:2px 2px blue">Welcome to my most favourite travel destination in the world!</h1></div>
+
+<div id="content">Powered by Nature
+<br>
+Five Great Places To Visit At "The End Of The World"
+<ol>
+<li>
+<h1>
+HEMSEDAL
+</h1>
+<img src="hemsedal.jpg" height="300px" width="500px"></img>
+<p>Hemsedal Ski Centre is one of the largest ski resorts in Norway, with more than 50 slopes and 20 lifts, as well as ski cross arenas and snow parks fit for all levels.</p>
+</li>
+<li>
+<h1>
+Geirangerfjord
+</h1>
+<img src="gei.jpg" height="300px" width="500px"></img>
+<p>The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality. It is a 15-kilometre -long branch off the Sunnylvsfjorden, which is a branch off the Storfjorden.</p>
+</li>
+<li>
+<h1>
+The Royal Palace
+</h1>
+<img src="palace.jpg" height="300px" width="500px"></img>
+<p>The Royal Palace in Oslo was built in the first half of the 19th century as the Norwegian residence of the French-born King Charles III John of Norway, who reigned as king of Norway and Sweden. The palace is the official residence of the current Norwegian monarch while the Crown Prince resides at Skaugum in Asker west of Oslo</p>
+</li>
+<li>
+<h1>
+The Seven Sisters Waterfall
+</h1>
+<img src="sis.jpg" height="300px" width="500px"></img>
+<p>The Seven Sisters is the 39th tallest waterfall in Norway. The 410-metre tall waterfall consists of seven separate streams, and the tallest of the seven has a free fall that measures 250 metres. </p>
+</li>
+<li>
+<h1>
+Rondane National Park
+</h1>
+<img src="reindeer.jpg" height="300px" width="500px"></img>
+<p>Rondane National Park is the oldest national park in Norway, established on 21 December 1962. The park contains ten peaks above 2,000 metres, with the highest being Rondeslottet at an altitude of 2,178 m. The park is an important habitat for herds of wild reindeer. </p>
+</li>
+<li>
+<h1>
+The Museum of Cultural History
+</h1>
+<img src="museum.jpg" height="300px" width="500px"></img>
+<p>Museum of Cultural History is an association of museums subject to the University of Oslo, Norway. KHM was established in 1999 as Universitetets kulturhistoriske museum with the merging of the bodies Universitetets Oldsaksamling which housed a collection of ancient and medieval objects, Viking Ship Museum at Bygdøy, the Coin Cabinet and Ethnographic Museum. </p>
+</li>
+</ol>
+</div>
+
+<div style="padding:20px;"id="Hotels">
+<table style="border:2px double black;" align="center">
+<tr><th style="font-size:20px;padding:20px;">Places to stay in Norway</th></tr>
+</table>
+<table class="style-table">
+<thead>
+<tr>
+<th>Image</th>
+<th>Hotel Name</th>
+<th>Price</th>
+<th>Facilities</th>
+</tr>
+</thead>
+<tr>
+<th><img src="rad.jpg" height="200px" width="200px"></th>
+<th>Radisson Blu Park Hotel, Oslo</th>
+<th>84.13$ per night</th>
+<th>Straightforward lodging with a restaurant & an exercise room, plus free WiFi & breakfast.(Eco-certified, 4-star hotel)</th>
+</tr>
+<tr>
+<th><img src="thn.jpg"height="200px" width="200px"></th>
+<th>Thon Hotel Lofoten</th>
+<th>178.05$ per night</th>
+<th>Modern hotel along the harbor, offering chic rooms & suites, as well as dining & a gym.Great bar and breakfast facilities</th>
+</tr>
+<tr>
+<th><img src="grand.jpg"height="200px" width="200px"></th>
+<th>Grand Hotel Oslo </th>
+<th>322.62$ per night</th>
+<th>Understated rooms in a sophisticated hotel with fine dining, a rooftop bar & a heated indoor pool.Spa facilities and near public transport, popular with business travellers.</th>
+</tr>
+<tr>
+<th><img src="wild.jpg"height="200px" width="200px"></th>
+<th>Norwegian Wild/Camp Tranøybotn</th>
+<th>Stay 1 extra night for an avg nightly rate of 74.32</th>
+<th>Norwegian Wild offers accommodation and experiences in the pristine wilderness at Senja, Norway’s second largest island providing a “back to nature”-experience in a cozy and authentic environment.</th>
+</tr>
+<tr>
+<th><img src="rorbu.jpg"height="200px" width="200px"></th>
+<th>Nyvågar Rorbuhotel</th>
+<th>160.63 per night</th>
+<th>Warm cottages with kitchenettes in a contemporary seaside rorbu offering a cozy eatery & a terrace.Great Bar/Breakfast</th>
+
+</table>
+</div>
+<div id="visit">
+<h2>Why visit Norway?</h2>
+<p>The Scandinavian country is known for its remote location, its incredible scenery and its surreal fjords.Norway boasts large historic cities, magnificent cathedrals, a progressive population and unending ways to stay active outdoors.</p>
+</div>
+<div class="container">
+  <img src="fjord.jpg" alt="Fjords" class="image">
+  <div class="overlay">
+    <div class="text">There are more than a thousand fjords in Norway, all along the coast. But most of the iconic ones – those you may have seen on the postcards, like the Nærøyfjord, the Sognefjord, the Lysefjord, and the Geirangerfjord – are located in Fjord Norway.The fjords resemble still blue lakes, but consist of saltwater – they are prolonged arms of the seas, often reaching deep inland with majestic cliffs towering above on both sides.More than anything the fjords and the surrounding areas evoke images of a Norway of the past: A time when people lived as farmers in impossibly steep and rocky surroundings (in certain places they still do). A time when you could harvest from the blossoming fruit trees, and a sheep’s head was considered a delicacy (it still is).</div>
+  
+  </div>
+ 
+</div>
+<div class="container">
+  <img src="shop.jpg" alt="Oslo Shopping Centre" class="image">
+  <div class="overlay">
+    <div class="text">In the capital city of Norway, the Oslo City Shopping Center is one of the largest and most popular shopping centers in Norway. Built in 1988, this shopping center is home to about 93 shops and restaurants today, and is conveniently located within walking distance from the Central Station. A wide assortment of speciality shops, fast food restaurants and ultra-sleek retail venues bring over 16 million shoppers here every year.</div>
+  
+  </div>
+ 
+</div>
+
+ 
+<div class="footer"><p>Copyright©2021. To know more about Norway,<a href="https://www.visitnorway.com/">Visit</a></p></div>
+</body>
+</html>
